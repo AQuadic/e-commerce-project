@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce-Project</title>
+    <meta name="description" content="E-commerce-Project" />
+    <meta name="keywords" content="E-commerce-Project" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-WJUUqfoMmnfkBLne5uxXj+na/c7sesSJ32gI7GfCk4zO4GthUKhSEGyvQ839BC51"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section class="cart container">
+      <div class="no_product">
+        <img src="./images/delivery.png" alt="delivery" />
+        <h2>No Products In Your cart</h2>
+        <p>Thousands of Anime products are waiting for you.</p>
+        <a href="index.html" class="btn_page">Go To Home</a>
+      </div>
+      <div class="yes_product">
+        <h2 class="head_title">Shopping Cart <span>( 2 Products )</span></h2>
+        <div class="cart_about">
+          <div class="cart_products">
+            <div class="item">
+          
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="inlineCheckbox1"
+                  value="option1" 
+                  checked
+                />
+             
+              <img src="./images/cart_img.png" class="item_img" alt="item" />
+              <div class="about_item">
+                <h2>
+                  FADDY NATIVE Death Note Anime Legendary Detective Wallet
+                </h2>
+                <div class="salary">
+                  <p>499 <span>EGP</span></p>
+                </div>
+                <h3>Section: Bottle & Cup</h3>
+                <div class="end_item">
+                    <div class="part1">
+                        <button>
+                            <img src="./images/remove_item.png" alt="" />
+                            <p>Remove</p>
+                          </button>
+                          <div class="counts">
+                            <input type="button" id="dec" value="-" />
+                            <div class="count">
+                              <p>Quantity <span id="count">1</span></p>
+                              <!-- <input type="text" id="count" value="1" > -->
+                            </div>
+                            <input type="button" id="inc" value="+" />
+                          </div>
+                    </div>
+               
+                  <p class="date">Estimated Delivery Date:11 February - 16 February</p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="cart_price">
+            <div class="complet_order">
+              <ul>
+                <li>
+                  <h4>Total amount</h4>
+                  <h5>638 EGP</h5>
+                </li>
+                <li>
+                  <h4>Sub total</h4>
+                  <h5>638 EGP</h5>
+                </li>
+                <li>
+                    <h4>Discount</h4>
+                    <h5 style="color: #157E0C;">-25 EGP</h5>
+                  </li>
+              </ul>
+              <button class="btn_page">Complete Order</button>
+            </div>
+            <div class="discount">
+                <div class="accordion accordion-flush" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Use Discount Code
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                         <input type="text">
+                         <input type="button" class="btn_page" value="Apply Code" >
+                         <div class="code_done">
+                            <p >FreeAnime50</p>
+                            <button>Cancel</button>
+                         </div>
+                        </div>
+                      </div>
+                    </div>
+                   
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer_about">
+          <div class="logo">
+            <img src="./images/fotter_logo.png" alt="fotter_logo" />
+          </div>
+          <div class="part2">
+            <h2>New here ?</h2>
+            <p>Subscribe to get updates on our latest offers</p>
+            <form action="">
+              <input
+                type="email"
+                name=""
+                id=""
+                placeholder="Enter Your Email"
+              />
+              <input type="submit" value=" Subscribe" />
+            </form>
+          </div>
+          <div class="part3">
+            <div class="app">
+              <img src="./images/fotter_logo2.png" alt="fotter_logo2" />
+              <div class="about_app">
+                <h2>DOWNLOAD ANIME FREE APP</h2>
+                <p>Get access to exclusive offers!</p>
+              </div>
+            </div>
+            <div class="img_app">
+              <a href="">
+                <img src="./images/app-store.png" alt="app-store" />
+              </a>
+              <a href="">
+                <img src="./images/google-play.png" alt="google-play" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="copy">
+          <p>
+            Copyright © 2023 Made by <a href=""> AQuadic Software Solutions</a>
+          </p>
+          <div class="links">
+            <h4>Join us on</h4>
+            <div class="social">
+              <a href=""> <img src="./images/face.png" alt="face" /></a>
+              <a href="">
+                <img src="./images/insta.png" alt="insta" />
+              </a>
+              <a href="">
+                <img src="./images/linkedin.png" alt="linkedi" />
+              </a>
+              <a href="">
+                <img src="./images/twitter.png" alt="twitter" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      var inc = document.getElementById("inc");
+      var dec = document.getElementById("dec");
+      var val = document.getElementById("count");
+      dec.addEventListener("click", function () {
+        if (+val.innerText <= 1) {
+          val.innerText === "1";
+        } else {
+          val.innerText = +val.innerText - 1;
+        }
+      });
+      inc.addEventListener("click", function () {
+        val.innerText = +val.innerText + 1;
+      });
+      console.log(typeof +val.innerText);
+    </script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+  </body>
+</html>
