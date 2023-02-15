@@ -389,6 +389,7 @@ footer .container p {
   font-size: 14px;
   line-height: 18px;
   color: #d9d9d9;
+  margin-bottom: 14px;
 }
 footer .container .part2 form {
   display: flex;
