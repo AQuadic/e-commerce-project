@@ -19,59 +19,93 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <section class="cart container">
-      <div class="no_product">
-        <img src="./images/delivery.webp" alt="delivery" />
-        <h2>No Products In Your cart</h2>
-        <p>Thousands of Anime products are waiting for you.</p>
-        <a href="index.html" class="btn_page">Go To Home</a>
-      </div>
+    <section class="delivery cart container">
+        
       <div class="yes_product">
-        <h2 class="head_title">Shopping Cart <span>( 2 Products )</span></h2>
+        <h2 class="head_title">Delivery Information </h2>
         <div class="cart_about">
-          <div class="cart_products">
-            <div class="item">
-          
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  id="inlineCheckbox1"
-                  value="option1" 
-                  checked
-                />
-             
-              <img src="./images/cart_img.webp" class="item_img" alt="item" />
-              <div class="about_item">
-                <h2>
-                  FADDY NATIVE Death Note Anime Legendary Detective Wallet
-                </h2>
-                <div class="salary">
-                  <p>499 <span>EGP</span></p>
-                </div>
-                <h3>Section: Bottle & Cup</h3>
-                <div class="end_item">
-                    <div class="part1">
-                        <button>
-                            <img src="./images/remove_item.svg" alt="" />
-                            <p>Remove</p>
-                          </button>
-                          <div class="counts">
-                            <input type="button" id="dec" value="-" />
-                            <div class="count">
-                              <p>Quantity <span id="count">1</span></p>
-                              <!-- <input type="text" id="count" value="1" > -->
-                            </div>
-                            <input type="button" id="inc" value="+" />
-                          </div>
-                    </div>
-               
-                  <p class="date">Estimated Delivery Date:11 February - 16 February</p>
-                </div>
-              </div>
+          <div class="addresses">
+
+            <div class="steps ">
+                <button class="step active">
+                    <span>1</span>
+                    <p>My Address Information</p>
+                </button>
+                <button class="step ">
+                    <span>2</span>
+                    <p>My Payment Options</p>
+                </button>
             </div>
-            
+            <div class="my_addresse">
+                <h3>My Delivery Addresses   </h3>
+                <div class="info_addresse">
+                    <div class="item">
+                        <div class="top">
+                            <div class="home">
+                                <input class="form-check-input" type="radio" name="addresse" id="addresse" checked>
+                            <h4>Home</h4>
+                            </div>
+                            <div class="dropdown dropstart">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span></span><span></span><span></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><button>
+                                    <img src="./images/edit.svg" alt="Edit">
+                                    <p>Edit</p>
+                                  </button></li>
+                                  <li>
+                                    <span></span>
+                                  </li>
+                                  <li><button>
+                                    <img src="./images/delete.svg" alt="Delete">
+                                    <p>Delete</p>
+                                  </button></li>
+                                </ul>
+                              </div>
+                        </div>
+                        <p>66 Youssef Ghaly street Miami Alexandria </p>
+                    </div>
+<button class="add_addresse">
+<img src="./images/plus.webp" alt="plus">
+<p>Add New Address</p>
+</button>
+
+                </div>
+                <div class="end_addresse">
+                    <img src="./images/car.svg" alt="car">
+                    <p>Estimated Delivery Date:11 February - 16 February</p>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="my_payment">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Cash on delivery
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        Payment Via Card
+                    </label>
+                  </div>
+            </div>
           </div>
           <div class="cart_price">
+            <div class="order_summary">
+                <h6>Order Summary</h6>
+                <a href="cart.html">
+                    <p>2 Products</p>
+                    <img src="./images/arrow_back.svg" alt="arrow_back">
+                </a>
+            </div>
+          
             <div class="complet_order">
               <ul>
                 <li>
@@ -83,6 +117,10 @@
                   <h5>638 EGP</h5>
                 </li>
                 <li>
+                    <h4>SShipping</h4>
+                    <h5>40 EGP</h5>
+                  </li>
+                <li>
                     <h4>Discount</h4>
                     <h5 style="color: #157E0C;">-25 EGP</h5>
                   </li>
@@ -90,26 +128,11 @@
               <button class="btn_page">Complete Order</button>
             </div>
             <div class="discount">
-                <div class="accordion accordion-flush" id="accordionExample">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Use Discount Code
-                        </button>
-                      </h2>
-                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                         <input type="text">
-                         <input type="button" class="btn_page" value="Apply Code" >
-                         <div class="code_done">
-                            <p >FreeAnime50</p>
-                            <button>Cancel</button>
-                         </div>
-                        </div>
-                      </div>
-                    </div>
-                   
-                  </div>
+                
+                  <div class="code_done">
+                    <p >FreeAnime50</p>
+                    <button>Cancel</button>
+                 </div>
             </div>
           </div>
         </div>
@@ -175,22 +198,7 @@
         </div>
       </div>
     </footer>
-    <script>
-      var inc = document.getElementById("inc");
-      var dec = document.getElementById("dec");
-      var val = document.getElementById("count");
-      dec.addEventListener("click", function () {
-        if (+val.innerText <= 1) {
-          val.innerText === "1";
-        } else {
-          val.innerText = +val.innerText - 1;
-        }
-      });
-      inc.addEventListener("click", function () {
-        val.innerText = +val.innerText + 1;
-      });
-      console.log(typeof +val.innerText);
-    </script>
+   
     <script src="./js/popper.min.js"></script>
     <script src="./js/jquery-3.6.1.min.js"></script>
     <script src="./js/bootstrap.js"></script>
