@@ -247,7 +247,27 @@ html::-webkit-scrollbar-track {
   background: #eeeeee;
   transition: 0.3s;
 }
+.collection .cards .card .fav .love{
+  position: relative;
+}
+.collection .cards .card .fav .state::before {
+  z-index: 50;
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  background-image: url('../images/nolove.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.collection .cards .card .fav.active .state::before{
+  background-image: url('../images/love.svg');
 
+}
 .collection .cards .card .fav.active .love{
   display: block;
 }
