@@ -198,6 +198,32 @@ nav {
   height: 50px;
   background: #ffffff;
   border-radius: 10px;
+  position: relative;
+  padding: 16px 44px;
+}
+.right_nav input::placeholder {
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  color: #868686;
+}
+.right_nav form {
+  position: relative;
+  margin: auto;
+}
+.right_nav form::before {
+  content: "";
+  height: 17px;
+  width: 17px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 16px;
+  background-size: 17px;
+  background-repeat: no-repeat;
+  background-image: url("../images/search.svg");
+  z-index: 50;
 }
 .ac_nav {
   display: flex;
@@ -209,6 +235,19 @@ nav {
   line-height: 21px;
   margin: 0;
   color: white;
+
+  cursor: pointer;
+}
+.ac_nav .dropdown-toggle::after {
+  display: none;
+}
+.ac_nav .dropdown li {
+  border-bottom: 1px #d9d9d9 solid;
+  padding: 6px 0px;
+}
+.ac_nav .dropdown li a {
+  color: black !important;
+  padding: 4px 8px;
 }
 .phone_nav {
   display: none;
@@ -276,6 +315,10 @@ nav .dropdown-menu a {
   }
   .col-phone {
     display: block;
+    min-width: 100%;
+  }
+  .col-phone ul {
+    padding: 0;
   }
   .menue_loc {
     flex: none;
@@ -293,7 +336,10 @@ nav .dropdown-menu a {
   .right_nav input {
     margin: auto;
     max-width: 100%;
+    position: relative;
+    padding: 14px 44px;
   }
+
   .right_nav h4 {
     display: none;
   }
