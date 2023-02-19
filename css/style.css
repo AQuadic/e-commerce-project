@@ -166,7 +166,7 @@ html::-webkit-scrollbar-track {
 }
 
 /*===========nav neo=============*/
-nav {
+.navbar  {
   flex-direction: column;
   background: #2e1f26;
   gap: 30px;
@@ -181,6 +181,12 @@ nav {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+.menue_loc .location  .dropdown-menu a{
+color: black;
+}
+.menue_loc .location .dropdown-toggle::after{
+  display: none;
 }
 .menue_loc .loc {
   display: flex;

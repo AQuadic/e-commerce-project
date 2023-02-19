@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg ">
       <div class="container">
         <div class="menue_loc">
           <button
@@ -35,7 +35,19 @@
               <p style="color: white; font-size: 16px">Egypt</p>
             </div>
             <div class="lang">
-              <p style="color: white; font-size: 16px">English</p>
+              <div class="dropdown">
+                <p style="color: white; font-size: 16px"   class="dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >English</p>
+  
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">English</a></li>
+                  <li><a class="dropdown-item" href="#">العربية</a></li>
+                
+                </ul>
+              </div>
+           
             </div>
           </div>
         </div>
@@ -44,7 +56,23 @@
           <img src="./images/fotter_logo.webp" alt="" />
         </a>
         <div class="phone_nav ac_nav">
-          <h4>My Account</h4>
+          <div class="dropdown">
+            <h4
+              class="dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              My Account
+            </h4>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </div>
           <img src="./images/shop.svg" alt="" />
         </div>
         <div class="right_nav" id="">
