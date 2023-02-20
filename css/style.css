@@ -2272,11 +2272,15 @@ color: #868686;
   border: none;
   border-bottom: 1px solid;
   border-radius: 0;
+  font-family: "DM Sans3";
+
 }
 .modal-body input::placeholder{
   font-size: 16px;
   line-height: 21px;
-  color: #000000;
+  color: #5C5959;
+  font-family: "DM Sans3";
+
 }
 .modal-content{
   border-radius: 0px;
