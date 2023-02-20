@@ -1445,32 +1445,30 @@ input[type="range"]::-webkit-slider-thumb {
   line-height: 21px;
   margin-bottom: 26px;
 }
-.delivery .cart_about .addresses .my_addresse .info_addresse {
+ .my_addresse .info_addresse {
   display: flex;
   align-items: center;
   gap: 20px;
   flex-wrap: wrap;
   margin-bottom: 60px;
 }
-.delivery .cart_about .addresses .my_addresse .info_addresse .item {
+ .my_addresse .info_addresse .item {
   border: 1px solid #2e1f26;
   padding: 12px 16px;
   width: 174px;
 }
-.delivery .cart_about .addresses .my_addresse .info_addresse .item .top {
+ .my_addresse .info_addresse .item .top {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
 }
-.delivery .cart_about .addresses .my_addresse .info_addresse .item .top .home {
+ .my_addresse .info_addresse .item .top .home {
   display: flex;
   align-items: center;
   gap: 8px;
 }
-.delivery
-  .cart_about
-  .addresses
+
   .my_addresse
   .info_addresse
   .item
@@ -1481,9 +1479,7 @@ input[type="range"]::-webkit-slider-thumb {
   height: 13px;
   margin: 0;
 }
-.delivery
-  .cart_about
-  .addresses
+
   .my_addresse
   .info_addresse
   .item
@@ -1494,18 +1490,14 @@ input[type="range"]::-webkit-slider-thumb {
   line-height: 21px;
   margin: 0;
 }
-.delivery
-  .cart_about
-  .addresses
+
   .my_addresse
   .info_addresse
   .item
   .top
   .dropdown {
 }
-.delivery
-  .cart_about
-  .addresses
+
   .my_addresse
   .info_addresse
   .item
@@ -1522,9 +1514,7 @@ input[type="range"]::-webkit-slider-thumb {
   background: transparent;
   border: none;
 }
-.delivery
-  .cart_about
-  .addresses
+
   .my_addresse
   .info_addresse
   .item
@@ -1537,9 +1527,7 @@ input[type="range"]::-webkit-slider-thumb {
   background: #2e1f26;
   border-radius: 50%;
 }
-.delivery
-  .cart_about
-  .addresses
+
   .my_addresse
   .info_addresse
   .item
@@ -1549,9 +1537,7 @@ input[type="range"]::-webkit-slider-thumb {
   min-width: 68px !important;
   inset: 30px -22px auto auto !important;
 }
-.delivery
-  .cart_about
-  .addresses
+
   .my_addresse
   .info_addresse
   .item
@@ -1565,9 +1551,7 @@ input[type="range"]::-webkit-slider-thumb {
   height: 1px;
   background-color: #d9d9d9;
 }
-.delivery
-  .cart_about
-  .addresses
+
   .my_addresse
   .info_addresse
   .item
@@ -1584,7 +1568,7 @@ input[type="range"]::-webkit-slider-thumb {
   width: 100%;
 }
 
-.addresses
+
   .my_addresse
   .info_addresse
   .item
@@ -1597,12 +1581,12 @@ input[type="range"]::-webkit-slider-thumb {
   line-height: 16px;
   color: black;
 }
-.delivery .cart_about .addresses .my_addresse .info_addresse .item p {
+ .my_addresse .info_addresse .item p {
   font-size: 14px;
   line-height: 18px;
   color: #5c5959;
 }
-.delivery .cart_about .addresses .my_addresse .info_addresse .add_addresse {
+ .my_addresse .info_addresse .add_addresse {
   width: 172px;
   height: 116px;
   background: #efefef;
@@ -1613,7 +1597,7 @@ input[type="range"]::-webkit-slider-thumb {
   flex-direction: column;
   gap: 10px;
 }
-.delivery .cart_about .addresses .my_addresse .info_addresse .add_addresse p {
+ .my_addresse .info_addresse .add_addresse p {
   font-size: 14px;
   line-height: 18px;
 }
@@ -2123,6 +2107,7 @@ font-family: "DM Sans2";
   border: 1px solid #D9D9D9;
   padding: 28px;
   flex-grow: 1;
+  height: 100%;
 }
 .account_info input , .account_info .form-select{
   border: none;
@@ -2172,4 +2157,21 @@ color: #868686;
   bottom: 12px;
   right: 12px;
   
+}
+/*wish_list*/
+.wish_list{
+
+}
+.wish_list .empty_wish{
+  margin: 40px auto 0;
+  text-align: center;
+}
+.wish_list .empty_wish img{
+  max-width: 58%;
+  
+}
+.wish_list .empty_wish h4{
+  font-size: 20px;
+  line-height: 26px;
+ margin: 18px auto 36px;
 }

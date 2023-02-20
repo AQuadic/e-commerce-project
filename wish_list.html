@@ -440,10 +440,10 @@
             <a href="new_collection.html">My Account</a>
           </li>
           <li class="breadcrumb-item"><a href="index.html">Settings</a></li>
-          <li class="breadcrumb-item">Personal Information</li>
+          <li class="breadcrumb-item">Wish List</li>
         </ol>
       </nav>
-      <div class="account_info personal_info">
+      <div class="account_info wish_list">
         <div class="part1">
           <h2 class="h_account">Account Information</h2>
           <ul>
@@ -485,121 +485,34 @@
           </ul>
         </div>
         <div class="part2">
-          <h3>My Account</h3>
-          <h4>Personal Information</h4>
-          <p>You can change your account information</p>
-          <form class="row g-3">
-            <div class="col-md-6">
-              <label for="inputName4" class="form-label">Name</label>
-              <input
-                type="text"
-                class="form-control"
-                id="inputName4"
-                value="Donia"
-              />
-            </div>
-            <div class="col-md-6">
-              <label for="inputSurname4" class="form-label">Surname</label>
-              <input
-                type="text"
-                class="form-control"
-                id="inputSurname4"
-                value="El Wazery"
-              />
-            </div>
-            <div class="col-12">
-              <label for="inputemail" class="form-label">E-mail</label>
-              <input
-                type="email"
-                class="form-control"
-                id="inputemail"
-                placeholder="doniaelwazery@gmail.com"
-                disabled
-              />
-            </div>
-            <div class="col-3">
-              <label for="inputPhone" class="form-label">Phone</label>
-
-              <input
-                type="number"
-                style="border-bottom: 1px solid #157e0c"
-                class="form-control"
-                id="inputSurname4"
-                placeholder="+20"
-              />
-            </div>
-            <div class="col-9" style="align-self: end; position: relative">
-              <img src="./images/true.webp" class="true" alt="true" />
-              <input
-                type="number"
-                style="border-bottom: 1px solid #157e0c"
-                class="form-control"
-                id="inputSurname4"
-                value="1521541254"
-              />
-            </div>
-            <div class="col-12">
-                <h6>Date of birth</h6>
-               </div>
-            <div class="col-12 row">
-              <div class="col">
-                <label for="inputPhone" class="form-label">Day</label>
-
-                <select class="form-select" id="day"  aria-label="Default select example">
-                  <option selected>3</option>
-                 
-                </select>
+          <h3>My Wish List</h3>
+          <!-- if list of Wish is empty show this  -->
+          <div class="empty_wish">
+            <img src="./images/empty_wish.webp" alt="empty_wish">
+            <h4>There is no product in your favorites.</h4>
+            <a href="new_collection.html" class="btn_page">Go To Shopping</a>
+          </div>
+        <!-- if list of Wish is 'not' empty show this  -->
+          <div class="collection collection2 container">
+        
+            <div class="cards row">
+              <div class="card col-5 col-md-4 col-sm-5">
+              
+                
+                <div class="fav active">
+                  <div class="state"></div>
+                </div>
+              <a href="product.html">
+                <img src="./images/item1.webp"  class="img_card" alt="item" />
+                <h3>ONE PIECE Luffy Sports Water Bottle Anime</h3>
+                <p>499 <span>EGP</span></p>
+              </a>
+                <button class="btn_card">Add to cart</button>
               </div>
-              <div class="col">
-                <label for="inputPhone" class="form-label">Month</label>
-
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Mar</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-              </div>
-              <div class="col">
-                <label for="inputPhone" class="form-label">Year</label>
-
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>1999</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-              </div>
+            
             </div>
-            <div class="col-12">
-              <h6>Gender</h6>
-            </div>
-            <div class="col-12">
-              <div class="form-check form-check-inline">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="inlineRadioOptions"
-                  id="inlineRadio1"
-                  value="option1"
-                />
-                <label class="form-check-label" for="inlineRadio1"
-                  >Female</label
-                >
-              </div>
-              <div class="form-check form-check-inline">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="inlineRadioOptions"
-                  id="inlineRadio2"
-                  value="option2"
-                />
-                <label class="form-check-label" for="inlineRadio2">Male</label>
-              </div>
-            </div>
-           <button class="btn_page" style="margin: 50px 20px 20px;">Save</button>
-          </form>
+          </div>
+        
         </div>
       </div>
     </section>
@@ -663,18 +576,7 @@
         </div>
       </div>
     </footer>
-<script>
-   var min_day = 1,
-    max_day = 31,
-    select = document.getElementById('day');
 
-for (var i = min_day; i<=max_day; i++){
-    var opt = document.createElement('option');
-    opt.value = i;
-    opt.innerHTML = i;
-    select.appendChild(opt);
-}
-</script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/jquery-3.6.1.min.js"></script>
     <script src="./js/bootstrap.js"></script>
