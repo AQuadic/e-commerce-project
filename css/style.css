@@ -261,7 +261,7 @@ color: black;
 .ac_nav .dropdown-toggle::after {
   display: none;
 }
-.ac_nav .dropdown li {
+.ac_nav .dropdown li:not(:last-of-type) {
   border-bottom: 1px #d9d9d9 solid;
   padding: 6px 0px;
 }
