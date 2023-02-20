@@ -447,9 +447,9 @@
         <div class="part1">
           <h2 class="h_account">Account Information</h2>
           <ul>
-            <li><a href="" >My Orders</a></li>
-            <li><a href="">Addresses</a></li>
-            <li><a href="wish_list.html">Wish List</a></li>
+            <li><a href="">My Orders</a></li>
+            <li><a href="addresses.html" class="active">Addresses</a></li>
+            <li><a href="wish_list.html" >Wish List</a></li>
             <li>
               <div class="accordion accordion-flush" id="accordionFlushExample">
                 <div class="accordion-item">
@@ -473,8 +473,14 @@
                   >
                     <div class="accordion-body">
                       <ul>
-                        <li><a href="personal_info.html" class="active">Personal Information</a></li>
-                        <li><a href="change_password.html">Change Password</a></li>
+                        <li>
+                          <a href="personal_info.html" 
+                            >Personal Information</a
+                          >
+                        </li>
+                        <li>
+                          <a href="change_password.html">Change Password</a>
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -486,44 +492,60 @@
         </div>
         <div class="part2">
           <h3>My Addresses</h3>
-        <div class="my_addresse">
-
-       
-          <div class="info_addresse">
-            <div class="item">
+          <div class="my_addresse">
+            <div class="info_addresse">
+              <div class="item">
                 <div class="top">
-                    <div class="home">
-                        <input class="form-check-input" type="radio" name="addresse" id="addresse" checked>
+                  <div class="home">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="addresse"
+                      id="addresse"
+                      checked
+                    />
                     <h4>Home</h4>
-                    </div>
-                    <div class="dropdown dropstart">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span></span><span></span><span></span>
+                  </div>
+                  <div class="dropdown dropstart">
+                    <button
+                      class="btn btn-secondary dropdown-toggle"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <span></span><span></span><span></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <button>
+                          <img src="./images/edit.svg" alt="Edit" />
+                          <p>Edit</p>
                         </button>
-                        <ul class="dropdown-menu">
-                          <li><button>
-                            <img src="./images/edit.svg" alt="Edit">
-                            <p>Edit</p>
-                          </button></li>
-                          <li>
-                            <span></span>
-                          </li>
-                          <li><button>
-                            <img src="./images/delete.svg" alt="Delete">
-                            <p>Delete</p>
-                          </button></li>
-                        </ul>
-                      </div>
+                      </li>
+                      <li>
+                        <span></span>
+                      </li>
+                      <li>
+                        <button>
+                          <img src="./images/delete.svg" alt="Delete" />
+                          <p>Delete</p>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <p>66 Youssef Ghaly street Miami Alexandria </p>
+                <p>66 Youssef Ghaly street Miami Alexandria</p>
+              </div>
+              <button
+                class="add_addresse"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <img src="./images/plus.webp" alt="plus" />
+                <p>Add New Address</p>
+              </button>
             </div>
-<button class="add_addresse">
-<img src="./images/plus.webp" alt="plus">
-<p>Add New Address</p>
-</button>
-
-        </div>
-    </div>
+          </div>
         </div>
       </div>
     </section>
@@ -587,6 +609,155 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h3>My Addresses</h3>
+            <form class="row g-3">
+              <div class="col-md-6 ">
+                <label for="inputName4" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputName4"
+                  value="Donia"
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="inputSurname4" class="form-label">Surname</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputSurname4"
+                  value="El Wazery"
+                />
+              </div>
+
+              <div class="col-md-12">
+                <label for="inputState" class="form-label">Country</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option value="Egypt" selected>Egypt</option>
+                  <option value="2">eg</option>
+                  <option value="3">ar</option>
+                </select>
+              </div>
+              <div class="col-md-12">
+                <label for="inputState" class="form-label">City</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option value="Egypt" selected>City</option>
+                  <option value="2">alex</option>
+                  <option value="3">cairo</option>
+                </select>
+              </div>
+
+              <div class="col-md-12">
+                <label for="inputAddress" class="form-label">Address</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputAddress"
+                  placeholder="Address"
+                />
+              </div>
+              <div class="col-md-12">
+                <h4 style=" font-size: 16px;
+                line-height: 21px;  font-family: DM Sans3;">Building Details</h4>
+              </div>
+              <div class="col-md-6" style="margin-top:16px ;">
+                <label class="form-label">Building No.</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="inputnumber"
+                  placeholder="number"
+                />
+              </div>
+              <div class="col-md-6" style="margin-top:16px ;">
+                <label class="form-label">Building name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputName"
+                  placeholder="Name"
+                />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Appoinment No.</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="inputnumber"
+                  placeholder="number"
+                />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Floor No.</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="inputnumber"
+                  placeholder="number"
+                />
+              </div>
+              <div class="col-md-3">
+                <label for="inputAddress-title" class="form-label"
+                >Mobile Number</label
+              >
+              <input
+              type="tel"
+              class="form-control"
+              id="inputtel"
+             
+              value="+02"
+              disabled
+            />
+              </div>
+              <div class="col-md-9 " style="align-self: flex-end;">
+                
+              <input
+              type="tel"
+              class="form-control"
+              id="inputMobile"
+             
+            
+            />
+              </div>
+              <div class="col-md-12">
+                <label for="inputAddress-title" class="form-label"
+                  >Address Title</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputAddress title"
+                  placeholder="Address title"
+                />
+              </div>
+              <button class="btn_page" style="margin-top: 36px;">
+                Save Address
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="./js/popper.min.js"></script>
     <script src="./js/jquery-3.6.1.min.js"></script>
