@@ -109,6 +109,10 @@ html::-webkit-scrollbar-track {
   width: 100%;
   z-index: 1000;
   background-color: transparent !important;
+  transition: 0.3s;
+}
+.index_nav:hover{
+  background-color: var(--main-color) !important;
 }
 .navbar-toggler:focus,
 .navbar-toggler:active,
@@ -179,6 +183,7 @@ html::-webkit-scrollbar-track {
   gap: 30px;
   margin-bottom: 28px;
 }
+
 .menue_loc {
   display: flex;
   align-items: center;
