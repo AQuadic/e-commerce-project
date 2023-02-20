@@ -447,7 +447,7 @@
         <div class="part1">
           <h2 class="h_account">Account Information</h2>
           <ul>
-            <li><a href="" >My Orders</a></li>
+            <li><a href="my_orders.html" >My Orders</a></li>
             <li><a href="addresses.html">Addresses</a></li>
             <li><a href="wish_list.html">Wish List</a></li>
             <li>
@@ -521,17 +521,18 @@
               <label for="inputPhone" class="form-label">Phone</label>
 
               <input
-                type="number"
+                type="tel"
                 style="border-bottom: 1px solid #157e0c"
                 class="form-control"
                 id="inputSurname4"
-                placeholder="+20"
+                value="+20"
+                disabled
               />
             </div>
             <div class="col-9" style="align-self: end; position: relative">
               <img src="./images/true.webp" class="true" alt="true" />
               <input
-                type="number"
+                type="tel"
                 style="border-bottom: 1px solid #157e0c"
                 class="form-control"
                 id="inputSurname4"
@@ -582,6 +583,7 @@
                   name="inlineRadioOptions"
                   id="inlineRadio1"
                   value="option1"
+                  checked
                 />
                 <label class="form-check-label" for="inlineRadio1"
                   >Female</label

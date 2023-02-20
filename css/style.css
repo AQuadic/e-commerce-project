@@ -26,12 +26,7 @@
   font-weight: 200;
   font-style: normal;
 }
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-  
-  padding-left: calc(var(--bs-gutter-x) * .5) !important;
-  padding-right: calc(var(--bs-gutter-x) * .5) !important;
- 
-}
+
 h1,
 .btn_page,
 h2 {
@@ -1706,29 +1701,29 @@ input[type="range"]::-webkit-slider-thumb {
   margin-bottom: 28px;
   text-align: center;
 }
-.order .my_order {
+.my_order {
   border: 1px solid #d9d9d9;
   padding: 40px 30px;
 }
-.order .my_order .part1 {
+.my_order .part1 {
   background: #f2f2f2;
   padding: 40px 44px;
   margin-bottom: 42px;
 }
-.order .my_order .part1 .line {
+.my_order .part1 .line {
   display: block;
   width: 100%;
   margin: 28px auto;
   height: 1px;
   background-color: #ffffff;
 }
-.order .my_order .part1 .all_order {
+.my_order .part1 .all_order {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 
-.order .my_order .part1 .info_order {
+.my_order .part1 .info_order {
   display: flex;
   align-items: center;
 
@@ -1736,7 +1731,7 @@ input[type="range"]::-webkit-slider-thumb {
   flex-wrap: wrap;
   justify-content: center;
 }
-.order .my_order .part1 .info_order h5 {
+.my_order .part1 .info_order h5 {
   background: #856875;
   font-size: 16px;
   line-height: 21px;
@@ -1744,8 +1739,9 @@ input[type="range"]::-webkit-slider-thumb {
   width: 306px;
   text-align: center;
   padding: 16px 6px;
+  max-width: 100%;
 }
-.order .my_order .part1 .info_order ul {
+.my_order .part1 .info_order ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1753,111 +1749,124 @@ input[type="range"]::-webkit-slider-thumb {
   flex-wrap: wrap;
   flex-grow: 1;
 }
-.order .my_order .part1 .info_order ul li {
+.my_order .part1 .info_order ul li {
 }
-.order .my_order .part1 .info_order ul li h6 {
+.my_order .part1 .info_order ul li h6 {
   font-size: 14px;
   line-height: 18px;
 
   color: #868686;
 }
-.order .my_order .part1 .info_order ul li p {
+.my_order .part1 .info_order ul li p {
   font-size: 16px;
   line-height: 21px;
+  font-family: "DM Sans2"
 }
 
-.order .my_order .part1 .product_order {
+.my_order .part1 .product_order {
   display: flex;
   align-items: center;
   gap: 16px;
   flex-wrap: wrap;
   justify-content: center;
 }
-.order .my_order .part1 .product_order img {
+.my_order .part1 .product_order img {
 }
-.order .my_order .part1 .product_order .product_order_info {
+.my_order .part1 .product_order .product_order_info {
   flex-grow: 1;
 }
-.order .my_order .part1 .product_order .product_order_info h3 {
+.my_order .part1 .product_order .product_order_info h3 {
   font-size: 16px;
   line-height: 21px;
   margin-bottom: 8px;
 }
-.order .my_order .part1 .product_order .product_order_info .salary {
+.my_order .part1 .product_order .product_order_info .salary {
   margin-bottom: 4px;
 }
-.order .my_order .part1 .product_order .product_order_info h4 {
+.my_order .part1 .product_order .product_order_info h4 {
   font-size: 12px;
   line-height: 16px;
   margin-bottom: 12px;
 }
-.order .my_order .part1 .product_order .product_order_info h6 {
+.my_order .part1 .product_order .product_order_info h6 {
   font-size: 12px;
   line-height: 16px;
 }
 
-.order .my_order .part2 {
+ .my_order .part2 {
 }
-.order .my_order .part2 span {
+ .my_order .part2 span {
   display: block;
   width: 100%;
   height: 1px;
   background-color: #d9d9d9;
   margin: 28px auto;
 }
-.order .my_order .part2 h3 {
+ .my_order .part2 h3 {
   font-size: 16px;
   line-height: 21px;
   font-family: "DM Sans";
   margin-bottom: 24px;
 }
-.order .my_order .part2 .delivery_info {
+ .my_order .part2 .delivery_info {
 }
-.order .my_order .part2 .delivery_info ul {
+ .my_order .part2 .delivery_info ul {
   padding: 0;
 }
-.order .my_order .part2 .delivery_info ul li {
+ .my_order .part2 .delivery_info ul li {
   margin-bottom: 16px;
 }
-.order .my_order .part2 .delivery_info ul li h4 {
+ .my_order .part2 .delivery_info ul li h4 {
   font-size: 16px;
   line-height: 21px;
   margin-bottom: 8px;
 }
-.order .my_order .part2 .delivery_info ul li p {
+ .my_order .part2 .delivery_info ul li p {
   font-size: 14px;
   line-height: 18px;
   color: #5c5959;
 }
-.order .my_order .part2 .payment_info {
+ .my_order .part2 .payment_info {
 }
-.order .my_order .part2 .payment_info ul {
+ .my_order .part2 .payment_info ul {
   padding: 0;
   max-width: 500px;
 }
-.order .my_order .part2 .payment_info ul li {
+ .my_order .part2 .payment_info ul li {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 16px;
 }
-.order .my_order .part2 .payment_info ul li h5 {
+ .my_order .part2 .payment_info ul li h5 {
   font-size: 16px;
   line-height: 21px;
 }
-.order .my_order .part2 .payment_info ul li p {
+ .my_order .part2 .payment_info ul li p {
   font-size: 14px;
   line-height: 18px;
 
   color: #5c5959;
 }
 @media (max-width: 460px) {
-  .order .my_order {
+ .my_order {
     padding: 26px 8px;
   }
-  .order .my_order .part1 {
+  .my_order .part1 {
     padding: 40px 12px;
   }
+  
+  
+}
+@media (max-width: 500px) {
+  
+  .my_order .part1 .info_order h5 {
+   
+    width: 100%;
+  
+  
+  }
+  
 }
 /*=============================registration===================*/
 .registration {
@@ -2224,4 +2233,160 @@ color: #868686;
 }
 .modal-content{
   border-radius: 0px;
+}
+/*my_order*/
+.my_order2{
+
+}
+.my_order2 .links_order{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-top: 34px;
+  margin-bottom: 28px;
+}
+.my_order2 .links_order a{
+  font-size: 16px;
+  line-height: 21px;
+  color: #5C5959;
+  font-family: "DM Sans3";
+}
+.my_order2 .links_order a.active{
+  text-decoration-line: underline;
+  font-family: "DM Sans2";
+
+color: #2E1F26;
+}
+.my_order2 .my_order .part1 {
+ max-width: 100%;
+}
+.my_order2 .my_order {
+  border:  none;
+  padding: 0 ;
+}
+.my_order2 .my_order .part1 .info_order ul {
+ flex-direction: row;
+}
+.my_order2 .my_order .end_order{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.my_order2 .my_order .end_order a{
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.my_order2 .my_order .end_order a p{
+  font-size: 12px;
+line-height: 16px;
+color: #2E1F26;
+font-family: "DM Sans2"
+}
+.my_order2 .my_order .being_Prepared {
+  flex-grow: 1;
+}
+.my_order2 .my_order .being_Prepared p{
+  font-size: 12px;
+line-height: 16px;
+margin-bottom: 14px;
+font-family: "DM Sans2";
+
+}
+.my_order2 .my_order .being_Prepared .par{
+  width: 266px;
+height: 15px;
+max-width: 100%;
+
+background: #FFFFFF;
+}
+.my_order2 .my_order .being_Prepared .par span{
+  display: block;
+  height: 100%;
+  background: #2E1F26;
+}
+.my_order2 .my_order .part2 {
+  border: none;
+}
+.my_order2 .shipment {
+
+}
+.my_order2 .shipment h6 {
+  font-size: 12px;
+line-height: 16px;
+margin-bottom: 8px;
+}
+ .my_order2 .shipment .parts{
+display: flex;
+align-items: center;
+
+gap: 1px;
+
+ }
+ .my_order2 .shipment .part{
+padding: 8px ;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 6px;
+border: 1px solid #2E1F26;
+ }
+ .my_order2 .shipment .part.done{
+background-color: white;
+ }
+ .my_order2 .shipment .part.not_done{
+  background: #2E1F26;
+ }
+ .my_order2 .shipment .part.next{
+  opacity: 0.5;
+ }
+ .my_order2 .shipment .part p{
+  font-size: 12px;
+line-height: 16px;
+ }
+ .my_order2 .shipment .part.not_done p{
+  color: white;
+ }
+ .my_order2 .shipment span{
+  min-width: 30px;
+  max-width: 100%;
+  height: 1px;
+  
+  display: block;
+  background-color:#000000 ;
+ }
+
+
+
+@media(max-width:992px){
+  .my_order2 .my_order .being_Prepared .par{
+    width: 100%;
+
+  }
+  
+  
+}
+@media(max-width:768px){
+ 
+  .my_order2 .shipment .parts {
+  
+    gap: 3px;
+    flex-direction: column;
+  
+}
+.my_order2 .shipment span{
+  min-width: 1px;
+  max-height: 100%;
+  height: 30px;
+ }
+
+}
+@media(max-width:400px){
+  
+  .account_info .part2 {
+   
+    padding: 10px;
+  
+}
+  
 }

@@ -443,12 +443,12 @@
           <li class="breadcrumb-item">Addresses</li>
         </ol>
       </nav>
-      <div class="account_info Addresses">
+      <div class="account_info my_order2 ">
         <div class="part1">
           <h2 class="h_account">Account Information</h2>
           <ul>
-            <li><a href="my_orders.html">My Orders</a></li>
-            <li><a href="addresses.html" class="active">Addresses</a></li>
+            <li><a href="my_orders.html" class="active">My Orders</a></li>
+            <li><a href="addresses.html" >Addresses</a></li>
             <li><a href="wish_list.html" >Wish List</a></li>
             <li>
               <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -491,60 +491,87 @@
           </ul>
         </div>
         <div class="part2">
-          <h3>My Addresses</h3>
-          <div class="my_addresse">
-            <div class="info_addresse">
-              <div class="item">
-                <div class="top">
-                  <div class="home">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="addresse"
-                      id="addresse"
-                      checked
-                    />
-                    <h4>Home</h4>
-                  </div>
-                  <div class="dropdown dropstart">
-                    <button
-                      class="btn btn-secondary dropdown-toggle"
-                      type="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      <span></span><span></span><span></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <button>
-                          <img src="./images/edit.svg" alt="Edit" />
-                          <p>Edit</p>
-                        </button>
-                      </li>
-                      <li>
-                        <span></span>
-                      </li>
-                      <li>
-                        <button>
-                          <img src="./images/delete.svg" alt="Delete" />
-                          <p>Delete</p>
-                        </button>
-                      </li>
-                    </ul>
-                  </div>
+          <h3>My Orders</h3>
+        <div class="links_order">
+            <a href="#" class="active">All Orders</a>
+            <a href="#">New</a>
+            <a href="#">Delivered</a>
+        </div>
+        <div class="my_order">
+
+
+
+        
+            <div class="section1 part1">
+              <div class="info_order">
+                <div class="being_Prepared">
+                    <p>Being Prepared</p>
+                    <div class="par">
+                        <span style="width: 40%;"></span>
+                    </div>
                 </div>
-                <p>66 Youssef Ghaly street Miami Alexandria</p>
+
+                
+                <ul>
+                    <li>
+                        <h6>Order Summary</h6>
+                        <p>2 Products</p>
+                    </li>
+                    <li>
+                        <h6>Order No.</h6>
+                        <p>2375824</p>
+                    </li>
+                    <li>
+                        <h6>Order Date</h6>
+                        <p>12/02/2023 11:06</p>
+                    </li>
+                    <li>
+                        <h6>Total</h6>
+                        <p>658 EGP</p>
+                    </li>
+                </ul>
               </div>
-              <button
-                class="add_addresse"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                <img src="./images/plus.webp" alt="plus" />
-                <p>Add New Address</p>
-              </button>
+              <span class="line"></span>
+              <div class="all_order">
+                <div class="product_order">
+                    <img src="./images/cart_img.webp" alt="item" />
+                    <div class="product_order_info">
+                      <h3>FADDY NATIVE Death Note Anime Legendary Detective Wallet</h3>
+                      <div class="salary">
+                        <p>499 <span> EGP </span></p>
+                      </div>
+                      <h4>Section: Bottle & Cup</h4>
+                      <div class="end_order">
+                        <h6>Quantity 2</h6>
+                        <a href="order_details.html">
+                            <p>See Order Details</p>
+                            <img src="./images/arrow_left.svg" alt="arrow_left">
+                        </a>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="product_order">
+                    <img src="./images/cart_img.webp" alt="item" />
+                    <div class="product_order_info">
+                      <h3>FADDY NATIVE Death Note Anime Legendary Detective Wallet</h3>
+                      <div class="salary">
+                        <p>499 <span> EGP </span></p>
+                      </div>
+                      <h4>Section: Bottle & Cup</h4>
+                      <div class="end_order">
+                        <h6>Quantity 2</h6>
+                        <a href="order_details.html">
+                            <p>See Order Details</p>
+                            <img src="./images/arrow_left.svg" alt="arrow_left">
+                        </a>
+                    </div>
+                    </div>
+                  </div>
+              </div>
+             
             </div>
+
+           
           </div>
         </div>
       </div>
@@ -610,154 +637,7 @@
       </div>
     </footer>
 
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <h3>My Addresses</h3>
-            <form class="row g-3">
-              <div class="col-md-6 ">
-                <label for="inputName4" class="form-label">Name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="inputName4"
-                  value="Donia"
-                />
-              </div>
-              <div class="col-md-6">
-                <label for="inputSurname4" class="form-label">Surname</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="inputSurname4"
-                  value="El Wazery"
-                />
-              </div>
-
-              <div class="col-md-12">
-                <label for="inputState" class="form-label">Country</label>
-                <select class="form-select" aria-label="Default select example">
-                  <option value="Egypt" selected>Egypt</option>
-                  <option value="2">eg</option>
-                  <option value="3">ar</option>
-                </select>
-              </div>
-              <div class="col-md-12">
-                <label for="inputState" class="form-label">City</label>
-                <select class="form-select" aria-label="Default select example">
-                  <option value="Egypt" selected>City</option>
-                  <option value="2">alex</option>
-                  <option value="3">cairo</option>
-                </select>
-              </div>
-
-              <div class="col-md-12">
-                <label for="inputAddress" class="form-label">Address</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="inputAddress"
-                  placeholder="Address"
-                />
-              </div>
-              <div class="col-md-12">
-                <h4 style=" font-size: 16px;
-                line-height: 21px;  font-family: DM Sans3;">Building Details</h4>
-              </div>
-              <div class="col-md-6" style="margin-top:16px ;">
-                <label class="form-label">Building No.</label>
-                <input
-                  type="number"
-                  class="form-control"
-                  id="inputnumber"
-                  placeholder="number"
-                />
-              </div>
-              <div class="col-md-6" style="margin-top:16px ;">
-                <label class="form-label">Building name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="inputName"
-                  placeholder="Name"
-                />
-              </div>
-              <div class="col-md-6">
-                <label class="form-label">Appoinment No.</label>
-                <input
-                  type="number"
-                  class="form-control"
-                  id="inputnumber"
-                  placeholder="number"
-                />
-              </div>
-              <div class="col-md-6">
-                <label class="form-label">Floor No.</label>
-                <input
-                  type="number"
-                  class="form-control"
-                  id="inputnumber"
-                  placeholder="number"
-                />
-              </div>
-              <div class="col-md-3">
-                <label for="inputAddress-title" class="form-label"
-                >Mobile Number</label
-              >
-              <input
-              type="tel"
-              class="form-control"
-              id="inputtel"
-             
-              value="+02"
-              disabled
-            />
-              </div>
-              <div class="col-md-9 " style="align-self: flex-end;">
-                
-              <input
-              type="tel"
-              class="form-control"
-              id="inputMobile"
-             
-            
-            />
-              </div>
-              <div class="col-md-12">
-                <label for="inputAddress-title" class="form-label"
-                  >Address Title</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="inputAddress title"
-                  placeholder="Address title"
-                />
-              </div>
-              <button class="btn_page" style="margin-top: 36px;">
-                Save Address
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
+   
 
     <script src="./js/popper.min.js"></script>
     <script src="./js/jquery-3.6.1.min.js"></script>
