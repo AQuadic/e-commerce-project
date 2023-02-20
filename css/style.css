@@ -102,7 +102,14 @@ html::-webkit-scrollbar-track {
 .navbar-toggler {
   border: 0 !important;
 }
-
+.index_nav{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: transparent !important;
+}
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
@@ -170,6 +177,7 @@ html::-webkit-scrollbar-track {
   flex-direction: column;
   background: #2e1f26;
   gap: 30px;
+  margin-bottom: 28px;
 }
 .menue_loc {
   display: flex;
@@ -241,6 +249,7 @@ color: black;
   line-height: 21px;
   margin: 0;
   color: white;
+  font-family: "DM Sans3";
 
   cursor: pointer;
 }
@@ -498,6 +507,7 @@ nav .dropdown-menu a {
   transform: translateX(-50%);
   width: 50%;
   max-width: 233px;
+  font-family: "DM Sans";
 }
 /*New collection*/
 .collection {
@@ -691,6 +701,7 @@ footer .container h2 {
   font-size: 16px;
   line-height: 21px;
   margin-bottom: 4px;
+  font-family: "DM Sans2";
 }
 footer .container p {
   font-size: 14px;
@@ -762,7 +773,7 @@ footer .copy {
 footer .copy p {
 }
 footer .copy p a {
-  font-family: "DM Sans3";
+ 
   text-decoration: underline;
   color: white;
 }
@@ -1175,6 +1186,7 @@ input[type="range"]::-webkit-slider-thumb {
 .product .curunt_product .about_product ul li {
   font-size: 16px;
   line-height: 25px;
+  font-family: "DM Sans3";
 }
 .counts {
   display: flex;
@@ -1225,6 +1237,7 @@ input[type="range"]::-webkit-slider-thumb {
 .cart .no_product h2 {
   font-size: 20px;
   line-height: 26px;
+  font-family: "DM Sans2";
 }
 .cart .no_product p {
   font-size: 16px;
@@ -1348,6 +1361,8 @@ input[type="range"]::-webkit-slider-thumb {
 .cart .cart_about .cart_price .complet_order ul li h4 {
   font-size: 14px;
   line-height: 18px;
+  font-family: "DM Sans3";
+
 }
 .cart .cart_about .cart_price .complet_order ul li h5 {
   font-size: 14px;
@@ -1356,6 +1371,7 @@ input[type="range"]::-webkit-slider-thumb {
 .cart .cart_about .cart_price .complet_order ul li:first-of-type h4 {
   font-size: 16px;
   line-height: 21px;
+  font-family: "DM Sans3";
 }
 .cart .cart_about .cart_price .complet_order ul li:first-of-type h5 {
   font-size: 16px;
@@ -1389,6 +1405,8 @@ input[type="range"]::-webkit-slider-thumb {
   font-size: 16px;
   line-height: 21px;
   color: #157e0c;
+  font-family: "DM Sans";
+
 }
 .code_done button {
   font-size: 16px;
@@ -1396,6 +1414,8 @@ input[type="range"]::-webkit-slider-thumb {
   background-color: transparent;
   border: none;
   color: #da300a;
+  font-family: "DM Sans";
+
 }
 .cart .cart_about .cart_price .accordion-button {
   padding: 0;
@@ -1439,6 +1459,8 @@ input[type="range"]::-webkit-slider-thumb {
   font-size: 16px;
   line-height: 21px;
   margin-bottom: 26px;
+  font-family: "DM Sans3";
+
 }
  .my_addresse .info_addresse {
   display: flex;
@@ -1595,6 +1617,8 @@ input[type="range"]::-webkit-slider-thumb {
  .my_addresse .info_addresse .add_addresse p {
   font-size: 14px;
   line-height: 18px;
+  font-family: "DM Sans2";
+
 }
 .delivery .cart_about .addresses .my_addresse .end_addresse {
   display: flex;
@@ -1740,6 +1764,8 @@ input[type="range"]::-webkit-slider-thumb {
   text-align: center;
   padding: 16px 6px;
   max-width: 100%;
+  font-family: "DM Sans3";
+
 }
 .my_order .part1 .info_order ul {
   display: flex;
@@ -1754,6 +1780,7 @@ input[type="range"]::-webkit-slider-thumb {
 .my_order .part1 .info_order ul li h6 {
   font-size: 14px;
   line-height: 18px;
+  font-family: "DM Sans3";
 
   color: #868686;
 }
@@ -1779,6 +1806,7 @@ input[type="range"]::-webkit-slider-thumb {
   font-size: 16px;
   line-height: 21px;
   margin-bottom: 8px;
+  font-family: "DM Sans3";
 }
 .my_order .part1 .product_order .product_order_info .salary {
   margin-bottom: 4px;
@@ -2011,11 +2039,15 @@ margin-bottom: 36px;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
+  font-family: "DM Sans3";
+
 }
 .sign_out h4 button{
   background-color: transparent;
   border: none;
   color: #BEBCD4;
+  font-family: "DM Sans";
+
 }
 .sign_out h4 button.resend{
   color: #2E1F26;
@@ -2080,6 +2112,8 @@ margin-bottom: 100px;
   font-size: 20px;
 line-height: 26px;
 margin-bottom: 24px;
+font-family: "DM Sans2";
+
 }
 .account_info h3{
   font-size: 20px;
@@ -2124,6 +2158,7 @@ font-family: "DM Sans2";
  border-radius: 0%;
   outline: none;
   padding: 0 0 8px;
+  font-family: "DM Sans3";
 }
 .account_info input[type=radio] {
   border: 1px solid;
@@ -2154,6 +2189,7 @@ margin-bottom: 16px;
 .account_info label{
   font-size: 14px;
 line-height: 18px;
+font-family: "DM Sans3";
 
 color: #868686;
 
@@ -2199,6 +2235,7 @@ color: #868686;
 .modal-body h3{
   font-size: 20px;
 line-height: 26px;
+font-family: "DM Sans";
 }
 .modal-body .row > * {
  
