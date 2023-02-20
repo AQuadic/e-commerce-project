@@ -546,6 +546,7 @@ nav .dropdown-menu a {
   z-index: 50;
   background: #eeeeee;
   transition: 0.3s;
+  border: none;
 }
 .collection .cards .card .fav .love {
   position: relative;
