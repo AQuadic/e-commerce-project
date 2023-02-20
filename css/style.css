@@ -2238,6 +2238,29 @@ color: #868686;
 .modal-body{
 
 }
+.modal-body .map{
+  padding: 0px 30px;
+  position: relative;
+
+}
+.modal-body .map input[type=search] {
+  background: #FFFFFF;
+  border-radius: 10px;
+  width: 85%;
+  height: 54px;
+  border: none;
+  position: absolute;
+  z-index: 50;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.modal-body iframe {
+  height: 750px;
+  width: 100%;
+  border-radius: 10px;
+}
+
 .modal-body h3{
   font-size: 20px;
 line-height: 26px;
