@@ -2248,14 +2248,18 @@ font-family: "DM Sans";
   margin-top: 34px;
 }
 .modal.show .modal-dialog {
+ 
+}
+html[dir=rtl] .modal .modal-dialog {
   margin: 0;
   max-width: 640px;
-}
-html[dir=rtl] .modal.show .modal-dialog {
   margin-right: auto;
 }
-html[dir=ltr] .modal.show .modal-dialog {
+html[dir=ltr] .modal .modal-dialog {
+  margin: 0;
+  max-width: 640px;
   margin-left: auto;
+ 
 
 }
 .modal-body label{
